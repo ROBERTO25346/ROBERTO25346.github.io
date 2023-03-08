@@ -1,0 +1,276 @@
+/** traemos las fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+*{
+    font-family:"Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    
+ }
+
+
+/** Inicio*/
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("notebook.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: aliceblue;
+  }
+.inicio .contenido-seccion{
+    max-width: 2000px;
+    margin: auto;
+    text-align: left;
+    padding: 0 10px;
+    }
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+
+/* menu lateral*/
+.inicio .contenido-seccion header nav{
+    position:fixed;
+    margin-left: 60px;
+    background-color:cadetblue;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color:blue;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+/* ******termina menu lateral*/
+
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: cadetblue;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+    
+    }
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+    }
+.inicio .contenido-seccion .info{
+    padding-bottom: 100px;
+    }
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    color: black;
+    letter-spacing: 5px;
+    margin-left: 50px;
+    margin-top: 10px;
+    }
+.inicio .contenido-seccion .info h2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -10px;
+    color: black;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-left: 50px;
+    }
+.inicio .contenido-seccion .redes{
+    margin: 0 0;
+    }
+.inicio .contenido-seccion .redes a{
+    
+    display: inline-block;
+    text-decoration: none;
+    background-color:cadetblue;
+    color: black;
+    border: 2px solid blue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+    font-size: 23px;
+    
+}
+.inicio .contenido-seccion .redes a:hover{
+    background-color: aquamarine;
+    box-shadow: 0 0 20px #fff;
+   }
+.inicio .contenido-seccion .foto{
+    position: relative;
+    }
+.inicio .contenido-seccion .foto img{
+    width: 155px;
+    border-radius: 60%;
+    border: 2px solid blue;
+    position: absolute;
+    left: 22%;
+    top: -190px;
+    transform: translateX(-50%);
+    }
+/* seccion presentacion */
+
+.fila{
+    background-color: #CBC9E4    ;
+    padding: 20px 0 50px 0;
+    text-align: center;
+}
+.fila .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+    }
+.fila .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #59576F  ;
+    }
+.fila .contenido-seccion .toba{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    }
+.fila .contenido-seccion .toba .col{
+    width: 30%;
+    }
+.fila .contenido-seccion .toba i{
+    color: black;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid blue;
+    line-height: 40px;
+    border-radius: 50%
+    }
+.fila .contenido-seccion .toba span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+    font-size: 20px;
+    }
+
+/**experiencia laboral*/
+
+.experiencia{
+    background-color: rgb 103, 168, 208;
+    padding: 40px 0 100px 0;
+    text-align: center;
+    }
+.experiencia .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.experiencia .contenido-seccion .info{
+    text-align:left;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 30px;
+
+}
+.experiencia .contenido-seccion col{
+    
+    width: 50%;
+}
+.experiencia .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    border: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+    }
+.experiencia .contenido-seccion .info .table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    }
+.experiencia .contenido-seccion .info .table .datos{
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+    }
+.experiencia .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+    }
+.experiencia .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.experiencia .contenido-seccion .info .col table p{
+    font-size: 14px;
+    }
+.experiencia .contenido-seccion .info .col table .promedio{
+    display: block;
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.experiencia .contenido-seccion .info .col table .descripcion{
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px;    
+}
+/**--seccion contacto*/
+.contacto{
+    background-color: #534C81 ;
+    padding: 30px 0 50px 0;
+    text-align: center;
+    color: black;
+   }
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+       }
+
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    }
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+  }
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido-seccion .fila .col h2{
+    color: #0527FB ;
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+   
+    
+
+
+
+
+
+
+
+
+
